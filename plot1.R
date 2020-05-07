@@ -12,3 +12,10 @@ data1$Date <- as.Date(data1$Date, format="%d/%m/%Y")
 # Histogram
 hist(data1$Global_active_power, main="Global Active Power", 
      xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
+
+# saving plot file to png
+
+# Plot width and height with file format
+dev.copy(png, file = "plot1.png")
+
+dev.off()
